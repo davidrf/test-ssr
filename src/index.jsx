@@ -1,9 +1,7 @@
-import React from 'react'
-import { Hello } from './Hello.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { App } from './App/index.jsx';
 
-export const App = ({ title }) => (
-  <div>
-    <h1>{title}</h1>
-    <Hello />
-  </div>
-);
+const element = document.getElementById('app')
+
+ReactDOM.hydrate(<App title="best title" />, element)

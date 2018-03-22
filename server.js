@@ -3,12 +3,12 @@ const fs = require('fs');
 const path = require('path');
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
-const { App } = require('./dist');
+const { App } = require('./serverDist');
 
 const port = process.env.PORT || 8080
 const app = express()
 
-app.use(express.static(__dirname + '/build'))
+app.use(express.static(__dirname + '/dist'))
 
 function handleRender(req, res) {
   // Renders our Hello component into an HTML string
