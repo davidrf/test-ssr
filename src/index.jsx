@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App/index.jsx';
+import { Root } from './Root/index.jsx';
 
 const element = document.getElementById('app')
 
-ReactDOM.hydrate(<App title="best title" />, element)
+ReactDOM.hydrate(<Root title="best title" />, element)
